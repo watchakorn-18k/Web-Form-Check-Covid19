@@ -37,7 +37,7 @@
     </div>
     <div class="head-text">แบบประเมินอาการโควิด ตามหลักสถิติออนไลน์ (ไม่เป็นทางการ) [BETA]</div>
     <div class="containers">
-    <text><b>การตรวจเช็คคืออาการที่อาจจะเกิด 3 - 7 วัน ก่อนเลือกให้ตรวจสอบให้แน่ใจว่าจะเลือกอะไร หากกดเลือกพลาดไปให้รีเฟรชหน้าเว็บ 1 รอบ เพื่อผลประเมินที่ดี</b></text>
+    <text><b>การตรวจเช็คคืออาการที่อาจจะเกิดช่วง 3 - 7 วัน ก่อนเลือกให้ตรวจสอบให้แน่ใจว่าจะเลือกอะไร หากกดเลือกพลาดไปให้รีเฟรชหน้าเว็บ 1 รอบ เนื่องจากระบบยังไม่สมบูรณ์</b></text>
     <form action="" onsubmit="return false">
         <label id="l1" >มีไข้ (ตัวร้อน<text style="color:rgb(255, 38, 0)"> 38°</text>+C)
         <br>
@@ -47,6 +47,9 @@
         <br>
         <input type="radio" name="l1" id="lrN" value="0" onclick="show(this.value)">ไม่ใช่
         <br>
+        <text style="font-size:15px"><b>คำแนะนำเบื้องต้นก่อนพบแพทย์ </b><text id="info">ดื่มน้ำเยอะๆ, ลองกินพาราฯ 4 เวลาก่อน ถ้าผ่านไป 24 ช.ม.ไม่ดีขึ้นให้ลองไอโบโพรเฟน</text></text>
+        <br><hr style="margin: 10px;">
+        
         </label>
         <label id="l2">มีอาการไอแห้ง (ไม่มีเสมหะ)</label>
         <br>
@@ -56,6 +59,9 @@
         <br>
         <input type="radio" name="l2" id="lrN" value="0" onclick="show(this.value)">ไม่ใช่
         <br>
+        <text style="font-size:15px"><b>คำแนะนำเบื้องต้นก่อนพบแพทย์ </b><text id="info">จิบน้ำอุ่น ยาแก้ไอ อย่าดื่มน้ำเย็น</text></text>
+        <br>
+        <hr style="margin: 10px;">
         <label id="l1">มีอาการอ่อนล้า (ไม่มีแรง)</label>
         <br>
         <input type="radio" name="l3" id="lrY" value="8" onclick="show(this.value)">ใช่
@@ -64,6 +70,8 @@
         <br>
         <input type="radio" name="l3" id="lrN" value="0" onclick="show(this.value)">ไม่ใช่
         <br>
+        <text style="font-size:15px"><b>คำแนะนำเบื้องต้นก่อนพบแพทย์ </b><text id="info">นอนเยอะๆ พักผ่อนให้เพียงพอ</text></text>
+        <br><hr style="margin: 10px;">
         <label id="l2">มีอาการไม่ได้กลิ่น (เบื่ออาหาร)</label>
         <br>
         <input type="radio" name="l4" id="lrY" value="7" onclick="show(this.value)">ใช่
@@ -72,6 +80,7 @@
         <br>
         <input type="radio" name="l4" id="lrN" value="0" onclick="show(this.value)">ไม่ใช่
         <br>
+        <hr style="margin: 10px;">
         <label id="l1">มีอาการปวดหัว</label>
         <br>
         <input type="radio" name="l5" id="lrY" value="7" onclick="show(this.value)">ใช่
@@ -79,7 +88,10 @@
         <input type="radio" name="l5" id="lr"value="3.5" onclick="show(this.value)">บางครั้ง
         <br>
         <input type="radio" name="l5" id="lrN" value="0" onclick="show(this.value)">ไม่ใช่
+        <br>      
+        <text style="font-size:15px"><b>คำแนะนำเบื้องต้นก่อนพบแพทย์ </b><text id="info">ลองกินพาราฯ 4 เวลาก่อน ถ้าผ่านไป 24 ช.ม.ไม่ดีขึ้นให้ลองไอโบโพรเฟน</text></text>
         <br>
+        <hr style="margin: 10px;">
         <label id="l2">มีอาการปวดเมื่อยตามตัว</label>
         <br>
         <input type="radio" name="l6" id="lrY" value="6" onclick="show(this.value)">ใช่
@@ -88,6 +100,9 @@
         <br>
         <input type="radio" name="l6" id="lrN" value="0" onclick="show(this.value)">ไม่ใช่
         <br>
+        <text style="font-size:15px"><b>คำแนะนำเบื้องต้นก่อนพบแพทย์ </b><text id="info">ลองกินพาราฯ 4 เวลาก่อน ถ้าผ่านไป 24 ช.ม.ไม่ดีขึ้นให้ลองไอโบโพรเฟน</text></text>
+        <br>
+        <hr style="margin: 10px;">
         <label id="l1">มีอาการเจ็บคอ</label>
         <br>
         <input type="radio" name="l7" id="lrY" value="6" onclick="show(this.value)">ใช่
@@ -96,6 +111,9 @@
         <br>
         <input type="radio" name="l7" id="lrN" value="0" onclick="show(this.value)">ไม่ใช่
         <br>
+        <text style="font-size:15px"><b>คำแนะนำเบื้องต้นก่อนพบแพทย์ </b><text id="info">จิบน้ำอุ่น ผสมน้ำผึ้ง มะนาว เกลือ</text></text>
+        <br>
+        <hr style="margin: 10px;">
         <label id="l2">มีอาการท้องเสีย</label>
         <br>
         <input type="radio" name="l8" id="lrY" value="6" onclick="show(this.value)">ใช่
@@ -104,6 +122,8 @@
         <br>
         <input type="radio" name="l8" id="lrN" value="0" onclick="show(this.value)">ไม่ใช่
         <br>
+        <text style="font-size:15px"><b>คำแนะนำเบื้องต้นก่อนพบแพทย์ </b><text id="info">ดื่มน้ำเปล่ามาก ๆ หรืออาจผสมเกลือแร่ ORS</text></text>
+        <br><hr style="margin: 10px;">
         <label id="l1">มีอาการตาแดง</label>
         <br>
         <input type="radio" name="l9" id="lrY" value="6" onclick="show(this.value)">ใช่
@@ -111,7 +131,7 @@
         <input type="radio" name="l9" id="lr"value="3" onclick="show(this.value)">บางครั้ง
         <br>
         <input type="radio" name="l9" id="lrN" value="0" onclick="show(this.value)">ไม่ใช่
-        <br>
+        <br><hr style="margin: 10px;">
         <label id="l2">มีอาการผื่นขึ้น หรือสีเล็บเปลี่ยน</label>
         <br>
         <input type="radio" name="l10" id="lrY" value="6" onclick="show(this.value)">ใช่
@@ -119,6 +139,10 @@
         <input type="radio" name="l10" id="lr"value="3" onclick="show(this.value)">บางครั้ง
         <br>
         <input type="radio" name="l10" id="lrN" value="0" onclick="show(this.value)">ไม่ใช่
+        <br><hr style="display: block; height: 1px;
+        border: 0; border-top: 1px solid rgba(204, 204, 204, 0);
+        margin: 20px 0; padding: 0;">
+        <text ><b>ข้อต่อไปนี้ต้องมีอาการข้างบนที่เลือก "ใช่" ประกอบด้วยอย่างน้อย1อย่าง จึงให้คะแนนอาการรุนแรงต่อไปนี้ได้หากไม่มีให้กด "ประเมินความเสี่ยง" ได้เลย</b></text>
         <br>
         <label id="l1">มีอาการอาเจียน</label>
         <br>
@@ -127,7 +151,7 @@
         <input type="radio" name="l11" id="lr"value="4" onclick="show(this.value)">บางครั้ง
         <br>
         <input type="radio" name="l11" id="lrN" value="0" onclick="show(this.value)">ไม่ใช่
-        <br>
+        <br><hr style="margin: 10px;">
         <label id="l2">มีอาการหอบ</label>
         <br>
         <input type="radio" name="l12" id="lrY" value="14" onclick="show(this.value)">ใช่
@@ -135,7 +159,7 @@
         <input type="radio" name="l12" id="lr"value="7" onclick="show(this.value)">บางครั้ง
         <br>
         <input type="radio" name="l12" id="lrN" value="0" onclick="show(this.value)">ไม่ใช่
-        <br>
+        <br><hr style="margin: 10px;">
     </form>
         <center>
         <button id="run-button">ประเมินความเสี่ยง</button></center>
