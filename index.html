@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="th">
 <head>
@@ -159,3 +160,166 @@
     <script src="index.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="th">
+<head>
+        <meta property="og:title" content="แบบประเมินอาการโควิด ตามหลักสถิติออนไลน์ (ไม่เป็นทางการ) [BETA]">
+<meta property="og:description" content="จัดทำโดย นายวัชกร บุตร์ดีวงษ์">
+<meta property="og:image" content="https://media.discordapp.net/attachments/476075825813389327/799087054012416010/unknown.png?width=1297&height=677">
+<meta property="og:url" content="https://watchakorn-web.github.io/check_covid/">
+    <link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประเมินอาการโควิด</title>
+
+
+</head>
+<body>
+    <div class="menubar">
+        <div class="container">
+            <div class="nav-grid">
+                <div class="logo">
+                    <h1 style="color:#fff">WatChaKorn</h1>
+                </div>
+                
+                <ul class="menu">
+                    <li>
+                        <a href="https://watchakorn-web.github.io/main/index.html">หน้าแรก</a>
+                    </li>
+                    <li>
+                        <a href="https://watchakorn-web.github.io/main/lecture.html">บทเรียน</a>
+                    </li>
+                    <li>
+                        <a href="https://watchakorn-web.github.io/main/contact.html">ติดต่อเรา</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="head-text">แบบประเมินอาการโควิด ตามหลักสถิติออนไลน์ (ไม่เป็นทางการ) [BETA]</div>
+    <div class="containers">
+    <form action="" onsubmit="return false">
+        <label id="l1" >มีไข้ (ตัวร้อน<text style="color:rgb(255, 38, 0)"> 38°</text>+C)
+        <br>
+        <input type="radio" name="l1" id="lrY" value="9" onclick="show(this.value)">ใช่
+        <br>
+        <input type="radio" name="l1" id="lr"value="4.5" onclick="show(this.value)">ไม่แน่ใจ
+        <br>
+        <input type="radio" name="l1" id="lrN" value="0" onclick="show(this.value)">ไม่ใช่
+        <br>
+        </label>
+        <label id="l2">มีอาการไอแห้ง (ไม่มีเสมหะ)</label>
+        <br>
+        <input type="radio" name="l2" id="lrY" value="8" onclick="show(this.value)">ใช่
+        <br>
+        <input type="radio" name="l2" id="lr"value="4" onclick="show(this.value)">ไม่แน่ใจ
+        <br>
+        <input type="radio" name="l2" id="lrN" value="0" onclick="show(this.value)">ไม่ใช่
+        <br>
+        <label id="l1">มีอาการอ่อนล้า (ไม่มีแรง)</label>
+        <br>
+        <input type="radio" name="l3" id="lrY" value="8" onclick="show(this.value)">ใช่
+        <br>
+        <input type="radio" name="l3" id="lr"value="4" onclick="show(this.value)">ไม่แน่ใจ
+        <br>
+        <input type="radio" name="l3" id="lrN" value="0" onclick="show(this.value)">ไม่ใช่
+        <br>
+        <label id="l2">มีอาการไม่ได้กลิ่น (เบื่ออาหาร)</label>
+        <br>
+        <input type="radio" name="l4" id="lrY" value="7" onclick="show(this.value)">ใช่
+        <br>
+        <input type="radio" name="l4" id="lr"value="3.5" onclick="show(this.value)">ไม่แน่ใจ
+        <br>
+        <input type="radio" name="l4" id="lrN" value="0" onclick="show(this.value)">ไม่ใช่
+        <br>
+        <label id="l1">มีอาการปวดหัว</label>
+        <br>
+        <input type="radio" name="l5" id="lrY" value="7" onclick="show(this.value)">ใช่
+        <br>
+        <input type="radio" name="l5" id="lr"value="3.5" onclick="show(this.value)">ไม่แน่ใจ
+        <br>
+        <input type="radio" name="l5" id="lrN" value="0" onclick="show(this.value)">ไม่ใช่
+        <br>
+        <label id="l2">มีอาการปวดเมื่อยตามตัว</label>
+        <br>
+        <input type="radio" name="l6" id="lrY" value="6" onclick="show(this.value)">ใช่
+        <br>
+        <input type="radio" name="l6" id="lr"value="3" onclick="show(this.value)">ไม่แน่ใจ
+        <br>
+        <input type="radio" name="l6" id="lrN" value="0" onclick="show(this.value)">ไม่ใช่
+        <br>
+        <label id="l1">มีอาการเจ็บคอ</label>
+        <br>
+        <input type="radio" name="l7" id="lrY" value="6" onclick="show(this.value)">ใช่
+        <br>
+        <input type="radio" name="l7" id="lr"value="3" onclick="show(this.value)">ไม่แน่ใจ
+        <br>
+        <input type="radio" name="l7" id="lrN" value="0" onclick="show(this.value)">ไม่ใช่
+        <br>
+        <label id="l2">มีอาการท้องเสีย</label>
+        <br>
+        <input type="radio" name="l8" id="lrY" value="6" onclick="show(this.value)">ใช่
+        <br>
+        <input type="radio" name="l8" id="lr"value="3" onclick="show(this.value)">ไม่แน่ใจ
+        <br>
+        <input type="radio" name="l8" id="lrN" value="0" onclick="show(this.value)">ไม่ใช่
+        <br>
+        <label id="l1">มีอาการตาแดง</label>
+        <br>
+        <input type="radio" name="l9" id="lrY" value="6" onclick="show(this.value)">ใช่
+        <br>
+        <input type="radio" name="l9" id="lr"value="3" onclick="show(this.value)">ไม่แน่ใจ
+        <br>
+        <input type="radio" name="l9" id="lrN" value="0" onclick="show(this.value)">ไม่ใช่
+        <br>
+        <label id="l2">มีอาการผื่นขึ้น หรือสีเล็บเปลี่ยน</label>
+        <br>
+        <input type="radio" name="l10" id="lrY" value="6" onclick="show(this.value)">ใช่
+        <br>
+        <input type="radio" name="l10" id="lr"value="3" onclick="show(this.value)">ไม่แน่ใจ
+        <br>
+        <input type="radio" name="l10" id="lrN" value="0" onclick="show(this.value)">ไม่ใช่
+        <br>
+        <label id="l1">มีอาการอาเจียน</label>
+        <br>
+        <input type="radio" name="l11" id="lrY" value="8" onclick="show(this.value)">ใช่
+        <br>
+        <input type="radio" name="l11" id="lr"value="4" onclick="show(this.value)">ไม่แน่ใจ
+        <br>
+        <input type="radio" name="l11" id="lrN" value="0" onclick="show(this.value)">ไม่ใช่
+        <br>
+        <label id="l2">มีอาการหอบ</label>
+        <br>
+        <input type="radio" name="l12" id="lrY" value="14" onclick="show(this.value)">ใช่
+        <br>
+        <input type="radio" name="l12" id="lr"value="7" onclick="show(this.value)">ไม่แน่ใจ
+        <br>
+        <input type="radio" name="l12" id="lrN" value="0" onclick="show(this.value)">ไม่ใช่
+        <br>
+    </form>
+        <center>
+        <button id="run-button">ประเมินความเสี่ยง</button></center>
+        <br>
+        
+        <div class="grid">
+            <ul>
+                <li class="score">คะแนน</li>
+                <li id = "test"></li>
+                <br>
+                <li class="result">ผลลัพธ์</li>
+                <li id = "test2"></li>
+            </ul>
+        <div class="m">
+            ปล.ผลการประเมินนี้ไม่เป็นทางการแต่พอจะใช้ในการสำรวจตัวเองได้ที่มา <a href="https://youtu.be/jwZZw3m3fmM" target="_blank">Loy Academy</a> จัดทำโดย นายวัชกร บุตร์ดีวงษ์</div>
+       </div>
+    
+
+</div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+>>>>>>> 67d1ec537bd05496008bbb98e64a031f4f0483ab

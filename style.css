@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Maitree&display=swap');
 body,button{
     font-family: 'Maitree', serif !important;
@@ -92,3 +93,99 @@ ul{
         padding:5px;
     }
 }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Maitree&display=swap');
+body,button{
+    font-family: 'Maitree', serif !important;
+    
+}
+.head-text {
+    text-align: center;
+    margin:10px;
+    font-size: 25px;
+}
+form{
+    display: block;
+    background-color:#f6f6f6;
+    border-radius: 5px;
+    padding:15px;
+
+}
+
+.containers{  
+    margin: auto;
+    width: 80%;
+    border: 1px solid #d6d9dc;
+    border-radius: 5px;
+    padding: 20px;
+    }  
+
+.containers #run-button{
+    font-size: 1.02rem;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(40, 137, 247);
+    border: 1px solid #d6d9dc;
+    border-radius: 5px;
+    margin: 30px 0 0;
+    
+}
+ul{
+    margin: 0px;
+    padding: 3px;
+    display: block;
+}
+.grid{
+    text-align: center;
+}
+.score,.result{
+    font-size: 20px;
+    display: block;
+    padding:20px;
+}
+#test{
+    font-size: 30px;
+    display: block;
+    padding:10px; 
+}
+#test2{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    display: block;
+    border-width: 10px;
+    border-radius: 15px;
+    padding:1px;
+}
+
+.m{
+    margin:20px 20px 0;
+    font-size: 12px;
+}
+@media only screen and (max-width: 375px) {
+    ul{
+        margin: 0px;
+        padding: 10px;
+        display: block;
+    }
+    .grid{
+        text-align: center;
+        padding: 5px;
+    }
+    .score,.result{
+        font-size: 20px;
+        display: block;
+        padding:0px;
+    }
+    #test{
+        font-size:20px;
+        display: inline;
+        padding:0px; 
+    }
+    #test2{
+        font-size: 16px;
+        display: block;
+        border-radius: 15px;
+        padding:5px;
+    }
+}
+>>>>>>> 67d1ec537bd05496008bbb98e64a031f4f0483ab
