@@ -41,7 +41,7 @@ function check_1() {
         result.style.background = "rgb(255 66 66)"
         result.style.color = "#fff"
     }
-    else if (score >= 25 & score <= 34) {
+    else if (score >= 25 & score <= 34.5) {
         text = "อาการกลุ่มไข้หวัดใหญ่ กักตัว ตรวจหาเชื้อด่วน"
         result.style.background = "rgb(255 137 15)"
         result.style.color = "#fff"
